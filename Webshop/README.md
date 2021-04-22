@@ -8,3 +8,6 @@ admin/products/add_product.php lijn 34
 Extra dingen die ik heb toegevoegd voor een beter cijfer:
 Extra query functies gebruikt.
 CMS product afbeeldingen uploaden
+
+Als iets fout is gegaan bijvoorbeeld er is een error.
+Neem contact met me op, want ik heb alles getest en er waren geen errors.
