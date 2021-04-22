@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(177, 177, 177);
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    background-color: rgb(66, 66, 66);;
+}
+
+header, footer{
+    width: 100%;
+    text-align: center;
+    clear: both;
+    background-color: black;
+    color: cornflowerblue;
+    padding: 7px 0;
+}
+
+header h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(31, 31, 31);
+    padding: 7px 5% 7px 3%;
+}
+
+nav a{
+    color: rgb(131, 131, 255);
+    margin-left: 25px;
+}
+
+.right{
+    float: right;
+}
+
+main{
+    padding-left: 10px;
+    color: rgb(19, 19, 56);
+}
+
+.regInput{
+    font-weight: bold;
+}
+
+.buynow{
+    float: left;
+    background-color: gray;
+    color: black;
+    border: 3px solid black;
+    width: 20%;
+    text-align: center;
+    margin-left: 10%;
+    padding: 5px 0px 10px 0px;
+}
+
+.infotext{
+    float: left;
+    background-color: grey;
+    color: rgb(63, 63, 172);
+    width: 98.5%;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid black;
+    clear: both;
+    padding: 10px 0px;
+}
+
+.infotext h3{
+    margin: 0;
+}
+
+.products:first-of-type{
+    margin-top: 30px;
+}
+
+.products{
+    background-color: gray;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    float: left;
+    padding: 5px 0 4px 5px;
+    margin-bottom: 20px;
+    width: 97.7%;
+}
+
+.detailinfo:first-of-type{
+    margin-top: 30px;
+}
+
+.detailinfo{
+    font-size: 20px;
+}
+
+.buy{
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.buyButn{
+    margin: 20px auto;
+    width: 15%;
+    background-color: rgb(58, 58, 58);
+    text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: brown;
+}
+
+.middle{
+    text-align: center;
+}
+
+.lol{
+    margin: 0 auto;
+    width: 77%;
+}
+
+.lol img{
+    width: 100%;
+}
+
+@media all and (max-width: 400px){
+    .buynow{
+        width: 100%;
+        margin: 0 0 10px 0;
+        font-size: larger;
+    }
+}

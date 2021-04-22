@@ -1,5 +1,5 @@
 <?php
-    include('../core/db_connect.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/school/webshop/core/db_connect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,3 +10,7 @@
     <title>Admin Panel - Webshop</title>
 </head>
 <body>
+<h3>This is the CMS part of the shop</h3>
+
+<hr>
+
