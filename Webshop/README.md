@@ -1,24 +1,10 @@
-# Basis webshop voor lessen webshop bouwen
+Dit werk is gemaakt duur Hugo de Heus.
+De SQL zit in het mapje database, deze moet je importen in je PHPmyadmin.
 
-## Starten van applicatie
+Ik heb een paar keer "$_SERVER['DOCUMENT_ROOT']" gebruikt. Je moet de mappen dus wel aanpassen. Ik heb "$_SERVER['DOCUMENT_ROOT']" gebruikt op in volgende files:
+admin/core/header.php lijn 2
+admin/products/add_product.php lijn 34
 
-In de **database** map staan een __webshop.sql__
-
-Zorg dat je lokaal dit bestand in een database **webshop** hebt geimporteerd.
-
-## Mappenstructuur
-
-- ***admin*** 
-    - Is het mapje waar het CMS (Content Management System) of Admin panel komt van de webshop.
-- ***assets*** 
-    - Hierin staan de css, js en images.
-    - Ook staan hier de upload images die geupload worden vanuit het CMS
-- ***core***
-    - In dit mapje staat de database connectie.
-    - De header en de footer van de HTML voorkant.
-    - **admin/core** bevat nog een checklogin function file. 
-- ***functions***
-    - Hier komen de _functions_ van de webshop in te staan. Denk hierbij aan het ophalen van producten of het plaatsen van een bestelling.
-
- ## Code conventions
-Link notion: https://www.notion.so/Code-afspraken-cb7f9788b9ae46dfa782545ec3aec572
+Extra dingen die ik heb toegevoegd voor een beter cijfer:
+Extra query functies gebruikt.
+CMS product afbeeldingen uploaden
