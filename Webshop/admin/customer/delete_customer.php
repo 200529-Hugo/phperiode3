@@ -3,7 +3,7 @@
     include('../core/checklogin_admin.php');
 ?>
 
-<h1>Gebruiker verwijderen</h1>
+<h1>Delete customer</h1>
 
 <?php
     if (isset($_POST['submit']) && $_POST['submit'] != '') {

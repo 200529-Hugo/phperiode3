@@ -3,33 +3,33 @@ include('../core/header.php');
 include('../core/checklogin_admin.php');
 ?>
 
-    <h1>Product bewerken</h1>
+    <h1>Edit product</h1>
 
 <?php
-if (isset($_POST['submit']) && $_POST['submit'] != '') {
-    $pid = $con->real_escape_string($_POST['product_id']);
-    $name = $con->real_escape_string($_POST['name']);
-    $description = $con->real_escape_string($_POST['description']);
-    $category_id = $con->real_escape_string($_POST['category_id']);
-    $price = $con->real_escape_string($_POST['price']);
-    $color = $con->real_escape_string($_POST['color']);
-    $weight = $con->real_escape_string($_POST['weight']);
-    $active = $con->real_escape_string($_POST['active']);
-    $query1 = $con->prepare("UPDATE product SET name = ?, description = ?, category_id = ?, price = ?, color = ?, weight = ?, active = ? WHERE product_id = ? LIMIT 1;");
-    if ($query1 === false) {
-        echo mysqli_error($con);
-    }
+    if (isset($_POST['submit']) && $_POST['submit'] != '') {
+        $pid = $con->real_escape_string($_POST['product_id']);
+        $name = $con->real_escape_string($_POST['name']);
+        $description = $con->real_escape_string($_POST['description']);
+        $category_id = $con->real_escape_string($_POST['category_id']);
+        $price = $con->real_escape_string($_POST['price']);
+        $color = $con->real_escape_string($_POST['color']);
+        $weight = $con->real_escape_string($_POST['weight']);
+        $active = $con->real_escape_string($_POST['active']);
+        $query1 = $con->prepare("UPDATE product SET name = ?, description = ?, category_id = ?, price = ?, color = ?, weight = ?, active = ? WHERE product_id = ? LIMIT 1;");
+        if ($query1 === false) {
+            echo mysqli_error($con);
+        }
 
-    $query1->bind_param('sssssssi',$name,$description,$category_id,$price,$color,$weight,$active,$pid);
-    if ($query1->execute() === false) {
-        echo mysqli_error($con);
-    } else {
-        echo '<div style="border: 2px solid red">Product aangepast</div>';
-        header('Refresh: 2; index.php');
-    }
-    $query1->close();
+        $query1->bind_param('sssssssi',$name,$description,$category_id,$price,$color,$weight,$active,$pid);
+        if ($query1->execute() === false) {
+            echo mysqli_error($con);
+        } else {
+            echo '<div style="border: 2px solid red">Edited product</div>';
+            header('Refresh: 2; index.php');
+        }
+        $query1->close();
 
-}
+    }
 ?>
 
 

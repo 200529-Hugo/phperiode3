@@ -3,7 +3,7 @@
     include('../core/checklogin_admin.php');
 ?>
 
-<h1>Edit user</h1>
+<h1>Edit customer</h1>
 
 <?php
     if (isset($_POST['submit']) && $_POST['submit'] != '') {
