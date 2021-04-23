@@ -21,6 +21,7 @@
                         <td>Description</td>
                         <td>Active</td>
                         <td>edit</td>
+                        <td>delete</td>
                     </tr>';
             while ($liqry->fetch() ) { ?>
                     <tr>
@@ -29,6 +30,7 @@
                     <td><?php echo $desc; ?></td>
                     <td><?php echo $active; ?></td>
                     <td><a href="edit_category.php?id=<?php echo $id; ?>">edit</a></td>
+                    <td><a href="delete_category.php?id=<?php echo $id; ?>">delete</a></td>
                 </tr>
                 <?php 
             }
